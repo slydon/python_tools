@@ -8,14 +8,6 @@ import json
 from pprint import pprint as pprint_fn
 
 pp = lambda x: pprint_fn(x, width=200)
-
-try:
-  import readline
-except ImportError:
-  print("Module readline not available.")
-else:
-  import rlcompleter
-  readline.parse_and_bind("tab: complete")
     
 def dist(d):
   r = {}
